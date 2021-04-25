@@ -25,6 +25,7 @@ class SimpleConvNet(nn.Module):
 ```
 Но к сожалению, весомых результатов это не дало :-(
 Матрица ошибок:
+```
 array([[ 96,  18,  39,  20,  40,  28,  43,  56,  34,  35],
        [ 20,  98,  43,  14,  48,  57,  54,  12,   3,  59],
        [ 49,  53,  67,  27,  49,  41,  43,  23,  20,  46],
@@ -35,7 +36,9 @@ array([[ 96,  18,  39,  20,  40,  28,  43,  56,  34,  35],
        [ 42,  15,  39,  21,  35,  24,  32, 117,  69,  28],
        [ 57,  11,  28,  17,  27,  22,  27,  83, 131,  26],
        [ 24,  67,  34,  15,  40,  50,  61,  21,  13,  85]])
+```
 Результат:
+```
 Accuracy of Australian terrier : 19 %
 Accuracy of Border terrier : 12 %
 Accuracy of Samoyed : 15 %
@@ -46,8 +49,9 @@ Accuracy of Rhodesian ridgeback :  9 %
 Accuracy of Dingo : 12 %
 Accuracy of Golden retriever : 12 %
 Accuracy of Old English sheepdog : 15 %
-
+```
 Второй способ решения, был с помощью нейросети ResNet. Результаты теста по классам показали такие результаты:
+```
 Accuracy of Australian terrier : 55 %
 Accuracy of Border terrier : 59 %
 Accuracy of Samoyed : 73 %
@@ -58,8 +62,10 @@ Accuracy of Rhodesian ridgeback : 56 %
 Accuracy of Dingo : 61 %
 Accuracy of Golden retriever : 72 %
 Accuracy of Old English sheepdog : 61 %
-
+```
 Матрица ошибок:
+
+```
 array([[255,   3,  17,   5,  30,  23,  15,  44,  11,   6],
        [  3, 269,  14,   4,  18,  28,  39,   0,   5,  28],
        [ 25,  10, 241,  56,   9,  13,  25,   7,   9,  23],
@@ -70,3 +76,4 @@ array([[255,   3,  17,   5,  30,  23,  15,  44,  11,   6],
        [ 46,   0,   6,   9,   1,  17,  12, 279,  49,   3],
        [ 11,   2,   6,   7,   6,   2,  16,  34, 337,   8],
        [ 12,  36,  22,   6,   8,  17,  36,  10,   7, 256]])
+```
